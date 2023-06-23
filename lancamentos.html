@@ -1,0 +1,160 @@
+<html lang="br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="src/css/styles.css" />
+    <link rel="stylesheet" href="src/css/imagens.css" />
+  </head>
+  <body style="background-color: #201b2c">
+    <header>
+      <div>
+        <a href="lancamentos.html" style="color: black; text-decoration: none; ">
+        <button
+          id="homeButton"
+          type="button"
+          style="background-color: #77ffc0; color: rgb(0, 0, 0);"
+          class="botoes"
+          
+        >
+          Home</a>
+        </button>
+        <button class="botoes">Sobre Nós</button>
+        <button class="botoes">Contato</button>
+        <span id="nomeUsuario" style="color: #fff; margin-right: 10px"></span>
+      </div>
+        <img
+          class="perfil"
+          src="Imagens/ba8d6167031003.5b2f68e1f347c.gif"
+          alt="Gif do superman"
+      /></a> 
+    </header>
+    <main>
+      <div class="lancamentos">
+        <center>
+          <h2>Lançamentos</h2>
+        </center>
+      </div>
+      <div class="site">
+        <div class="capas">
+          <div>
+            <a href="batmanFortaleza.html">
+              <img
+                class="capa"
+                src="Imagens/Capa de Hq/Batman frortaleza gif.gif"
+                alt="Gif da capa de batman fortaleza"
+              />
+            </a>
+          </div>
+          <div>
+            <a href="batmanLendas.html">
+              <img
+                class="capa"
+                src="Imagens/Capa de Hq/Batman Lendas.gif"
+                alt="Gif da capa de Batman lendas Urbanas"
+              />
+            </a>
+          </div>
+          <div>
+            <a href="Melhores do Mundo.html">
+              <img
+                class="capa"
+                src="Imagens/Capa de Hq/Batman Superman gif.gif"
+                alt="Gif da capa Batman Superman"
+              />
+            </a>
+          </div>
+          <div>
+            <a href="Artemis.html">
+              <img
+                class="capa"
+                src="Imagens/Capa de Hq/Artemis.gif"
+                alt="gif da capa Artemis"
+              />
+            </a>
+          </div>
+          <div>
+            <a href="crise sombria.html">
+              <img
+                class="capa"
+                src="Imagens/Capa de Hq/Batman crise sombria.gif"
+                alt="Gif crise sombria"
+              />
+            </a>
+          </div>
+          <div>
+            <a href="hora de matar.html">
+              <img
+                class="capa"
+                src="Imagens/Capa de Hq/Btmn-Hr-Mtr.gif"
+                alt="Gif Hora de matar"
+              />
+            </a>
+          </div>
+          <a href="superman jhonatan.html">
+            <img
+              class="capa"
+              src="Imagens/Capa de Hq/superman jhonatan kent.gif"
+              alt="Gif superman"
+            />
+          </a>
+        </div>
+        <div>
+          <center>
+            <h3 class="navegacao">Índices & Guias</h3>
+          </center>
+          <div class="guias">
+            <a style="color: red; text-decoration: none" href=""
+              >Revistas de A a Z <br />
+            </a>
+            <br />
+            <a
+              style="color: red; text-decoration: none"
+              href="Os novos 52.html"
+            >
+              Os Novos 52!<br />
+            </a>
+            <br />
+            <a
+              style="color: red; text-decoration: none"
+              href="Renascimento.html"
+            >
+              Renascimento DC<br />
+            </a>
+            <br />
+          </div>
+        </div>
+      </div>
+    </main>
+    <script src="src/js/usuario.js"></script>
+    <script src="src/js/script.js"></script>
+    <script>
+      const homeButton = document.querySelector(".botoes:first-of-type");
+      homeButton.addEventListener("click", function () {
+        homeButton.style.backgroundColor = "red"; // Altere a cor como desejar
+      });
+      const buttons = document.querySelectorAll(".botoes");
+      buttons.forEach((button) => {
+        button.addEventListener("click", function () {
+          buttons.forEach((btn) => btn.classList.remove("ativo"));
+          this.classList.add("ativo");
+        });
+      });
+      const perfilImage = document.querySelector(".perfil");
+      perfilImage.addEventListener("mouseover", function () {
+        this.style.boxShadow = "0 0 10px rgba(0, 0, 0, 0.3)"; // Altere a sombra como desejar
+      });
+
+      perfilImage.addEventListener("mouseout", function () {
+        this.style.boxShadow = "none";
+      });
+    </script>
+  </body>
+</html>
